@@ -13,6 +13,9 @@
 cov 1:
   url: https://drive.google.com/drive/search?q=%22Coverage%20{%companyname}%22
   title: Coverage-Doc anzeigen
+eucomp 1:
+ url: https://competition-cases.ec.europa.eu/search?search={%company}&sortField=relevance&sortOrder=DESC
+ title: Wettbewerbsverfahren EU
 yf 1:
   url: https://finance.yahoo.com/lookup?s={%stock}
   title: Yahoo Finance Lookup
