@@ -170,6 +170,9 @@ marke 1:
 short 1:
   url: https://www.bundesanzeiger.de/pub/de/to_nlp_start#serchilo[fill][input[type=text]]={%query}&serchilo[submit]=input[type=submit]
   title: Bundesanzeiger short sellers registry query
+wek 1:
+  url: https://wekan.aktienwelt360.de/global-search#serchilo[fill][input[type=text]]={%query}&serchilo[submit]=input[type=submit]
+  title:  Wekan global search
 inv 1:
   url: https://trovu.net/process/index.html?#country=de&language=de&query=g! {%company} Investor
   title: Investor Relations (Google be lucky)
