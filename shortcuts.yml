@@ -145,9 +145,6 @@ alpha 1:
 bai 1:
   url: http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd={%query}
   title: Baidu Search
-sec 2:
-  url: http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&type={%type}&company={%company}
-  title: SEC company filings enquiry
 fn 1:
   url: https://www.finanznachrichten.de/suche/uebersicht.htm?suche={%company}
   title: FinanzNachrichten Abfrage
@@ -191,12 +188,15 @@ gtr 1:
   url: https://trends.google.de/trends/explore?geo=DE&q={%keyword}
   title: Google Trends
 sec 1:
-  url: http://www.sec.gov/cgi-bin/browse-edgar?company={%company name}&CIK=&filenum=&State=&SIC=&owner=include&action=getcompany&type=
+  url: https://www.sec.gov/cgi-bin/browse-edgar?company={%company name}&CIK=&filenum=&State=&SIC=&owner=include&action=getcompany&type=
   title: EDGAR System of SEC for regulatory company information
   tags:
   - economy
   examples:
-    Honeywell: General company search
+    sec Honeywell: General company search
+sec 2:
+  url: https://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&type={%type}&company={%company}
+  title: SEC company filings enquiry
 € 1:
   url: https://www.google.de/search?q={%company}+aktie
   title: Google Aktie-Chart
