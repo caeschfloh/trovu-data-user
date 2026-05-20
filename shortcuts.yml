@@ -155,14 +155,13 @@ tja 1:
   url: http://noticias.tarija.bo/?submit=&s={%consulta}
   title: Tarija municipal news search
 wipo 1:
-  url: https://patentscope.wipo.int/search/en/search.jsf#trovu[fill]=%23simpleSearchForm\:fpSearch\:input&trovu[submit]=button[onclick="PrimeFaces.onPost();"]&q={%query}
+  url: https://patentscope.wipo.int/search/en/search.jsf#trovu[fill][.js-simple-search-input.query-text]={%query}&trovu[submit]=.primary.js-default-button&trovu[waitBeforeFill]=1000
   title: WIPO Patent Search
 banz 1:
-  url: https://bundesanzeiger.de/pub/de/start?0#trovu[fill]=input[placeholder=%22Suchbegriff eingeben%22]&trovu[submit]=input[name=%22search_button%22]&q={%query}
+  url: https://bundesanzeiger.de/pub/de/start?0#trovu[fill][%23id3]={%query}&trovu[submit]=%23id5&trovu[waitBeforeFill]=1000
   title: Bundesanzeiger German company registry query
 marke 1:
-  url: https://register.dpma.de/DPMAregister/marke/einsteiger#serchilo[fill][%23wm]=
-    {%query}&serchilo[submit]=%23rechercheStarten
+  url: https://register.dpma.de/DPMAregister/marke/basis#trovu[fill][#marke]={%query}&trovu[submit]=#rechercheStarten&trovu[waitBeforeFill]=1000
   title: 'simple German Brand Database DPMA Search '
 short 1:
   url: https://www.bundesanzeiger.de/pub/de/to_nlp_start#serchilo[fill][input[type=text]]={%query}&serchilo[submit]=input[type=submit]
